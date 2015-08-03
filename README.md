@@ -1,11 +1,16 @@
 # vargant-and-ansible-setup
 Instructions to set up Vagrant and Ansible
 
-see http://docs.vagrantup.com/v2/boxes/base.html
+### On a digital Ocean Box running Ubuntu 14.04:
+## Install Vagrant and VirtualBox:
+* Warning: Do not install VirtualBox nor Vagrant with `apt-get` as the Ubuntu repositories might be out of date
+ * Download virtualbox with `wget http://download.virtualbox.org/virtualbox/4.3.30/virtualbox-4.3_4.3.30-101610~Ubuntu~trusty_amd64.deb`
+ * Install virtualbox with `sudo dpkg -i virtualbox-4.3_4.3.30-101610~Ubuntu~raring_amd64.deb` (We're on 'trusty', but the package is apparrently 'raring')
+ * Download the vagrant .deb with `wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb` 
+ * Install vagrant with `sudo dpkg -i vagrant_1.7.4_x86_64.deb`
 
-* Download your vagrant box
-* `vagrant box add ubuntu-14.10 Downloads/ubuntu-14.10-amd64.box`
-* `vagrant init ubuntu-14.10`
-* `vagrant up` won't work on a crouton box, so we follow: https://github.com/dnschneid/crouton/wiki/Build-kernel-headers-and-install-Virtualbox-%28x86%29
-  * 
+## Find different boxes to install:
+ * Check out different boxes to install at http://www.vagrantbox.es/
+
+ 
 
